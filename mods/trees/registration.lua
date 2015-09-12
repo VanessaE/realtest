@@ -220,8 +220,7 @@ function realtest.register_tree(name, TreeDef)
 	
 	minetest.register_node(tree.name.."_leaves", {
 		description = tree.description.." Leaves",
-		drawtype = "plantlike",
-		visual_scale = 1.189,
+		drawtype = "allfaces_optional",
 		tiles = {tree.textures.leaves},
 		paramtype = "light",
 		groups = {snappy=3, leafdecay=3, flammable=2,drop_on_dig=1,leaves=1},
@@ -251,7 +250,6 @@ function realtest.register_tree(name, TreeDef)
 		minetest.register_node(tree.name.."_leaves_autumn", {
 			description = tree.description.." Leaves",
 			drawtype = "allfaces_optional",
-			visual_scale = 1.3,
 			tiles = {tree.textures.autumn_leaves},
 			paramtype = "light",
 			groups = {snappy=3, leafdecay=3, flammable=2,drop_on_dig=1,leaves=1},
@@ -282,7 +280,6 @@ function realtest.register_tree(name, TreeDef)
 		minetest.register_node(tree.name.."_leaves_winter", {
 			description = tree.description.." Leaves",
 			drawtype = "allfaces_optional",
-			visual_scale = 1.3,
 			tiles = {tree.textures.autumn_leaves},
 			paramtype = "light",
 			groups = {snappy=3, leafdecay=3, flammable=2,drop_on_dig=1,leaves=1},
